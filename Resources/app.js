@@ -3,21 +3,12 @@ var win1 = Ti.UI.createWindow({
 	title : 'Ti.AccountManager',
 	backgroundColor : '#fff',
 	exitOnClose : true,
-	fullscreen : trues
+	fullscreen : true
 });
-
 win1.open();
 
-var AM = require('org.bcbhh');
-var accounts = AM.getAccounts();
-console.log(accounts);
+Ti.App.AccountManager = require('org.bcbhh');
+var accounts = Ti.App.AccountManager.getAccounts();
 
-var options = [];
-for (var i = 0; i < accounts.length; i++) {
-	options.push(accounts[i].accountType);
-}
-var accountlist = Ti.UI.createOptionDialog({
-	options : options,
-	title : 'Choose your account!'
+require('ui/account.dialog')(accounts, function(_e) {
 });
-accountlist.show();
