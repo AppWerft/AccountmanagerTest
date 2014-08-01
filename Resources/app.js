@@ -4,8 +4,7 @@ var win1 = Ti.UI.createWindow({
 	backgroundColor : '#fff',
 	exitOnClose : true,
 	fullscreen : true
-});
-win1.open();
+}).open();
 
 Ti.App.AccountManager = require('org.bcbhh');
 
