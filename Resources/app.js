@@ -7,6 +7,6 @@ Ti.UI.createWindow({
 }).open();
 
 Ti.App.AccountManager = require('org.bcbhh');
-
+ 
 require('ui/account.dialog')(Ti.App.AccountManager.getAccounts(), function(_e) {
 });
