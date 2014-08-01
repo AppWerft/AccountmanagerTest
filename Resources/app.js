@@ -29,7 +29,7 @@ Ti.UI.createNotification({
 }).show();
 var options = [];
 for (var i = 0; i < accounts.length; i++) {
-	options.push(accounts[i].type);
+	options.push(accounts[i].accountType);
 }
 var accountlist = Ti.UI.createOptionDialog({
 	options : options,
