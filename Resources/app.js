@@ -1,5 +1,5 @@
 //
-var win1 = Ti.UI.createWindow({
+Ti.UI.createWindow({
 	title : 'Ti.AccountManager',
 	backgroundColor : '#fff',
 	exitOnClose : true,
