@@ -8,11 +8,14 @@
     <description>not specified</description>
     <copyright>2014 by rainerschleevoigt</copyright>
     <icon>appicon.png</icon>
-    <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
     <guid>99f61c2a-186a-44b7-bfae-8814f4109ee2</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="com.twitter.android.auth.login_consumerid" type="string">NUF1dFOdpgqK9Fpmxq4hADuqq</property>
+    <property name="com.twitter.android.auth.login_consumersecret" type="string">KJMctU26RANB275BwVTYOBzllG5JTbd4iRcXXF4enAsqweJj1m</property>
+   
     <ios>
         <plist>
             <dict>
