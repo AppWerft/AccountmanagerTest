@@ -7,7 +7,8 @@ Ti.UI.createWindow({
 }).open();
 
 Ti.App.AccountManager = require('org.bcbhh');
- 
-require('ui/account.dialog')(Ti.App.AccountManager.getAccounts(), function(_options) {
-	Ti.App.AccountManager.authorize(_options,function(_e){});
+
+require('ui/account.dialog')(Ti.App.AccountManager.getAccounts(), function(_res) {
+	var token= Ti.App.AccountManager.getAuthToken(_res.name, _res.type, _res.options);
+	console.log(token);
 });
